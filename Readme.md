@@ -3,7 +3,7 @@
 2 - Imagem para header do site\
 3 - Layout do site\
 4 - Fontes\
-5 - Ícones\
+5 - Ícones
 
 ### Descrição da atividade:
 ```
