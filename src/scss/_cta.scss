@@ -36,6 +36,7 @@
         position: absolute;
         padding: 3vh;
         right: -10%;
+        max-width: 13vw;
         background-color: $light-blue;
         &::before {
             display: flex;

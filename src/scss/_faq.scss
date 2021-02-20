@@ -1,6 +1,7 @@
 header {
     background-size: cover;
     background-image: url(../images/header.jpg);
+    background-position: center 50%;
     background-repeat: no-repeat;
     .top-navigation {
         display: flex;
@@ -44,21 +45,51 @@ header {
         }
         p {
             width: 100%;
-            max-width: 45%;
+            max-width: 365px;
             line-height: 1.5;
             color: $gray;
         }
         a {
             color: $light-purple;
-            &:hover, :active, :visited {
+            &:hover,
+            :active,
+            :visited {
                 color: $purple;
             }
         }
     }
+    .restricted-area {
+        position: absolute;
+        right: 5%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 13vw;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        color: $white;
+        font-family: $montserrat;
+        font-weight: 600;
+        font-size: 12px;
+        text-decoration: none;
+        text-transform: uppercase;
+        white-space: nowrap;
+        border-radius: 25px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 25px;
+        border-bottom-left-radius: 25px;
+        background-color: $orange;
+        &::before {
+            content: url(../images/icons/restrict-area.png);
+            padding-right: 5px;
+        }
+    }
     .faqs {
         background-color: $whiteless;
-    }
-    .restricted-area {
-        
     }
 }
