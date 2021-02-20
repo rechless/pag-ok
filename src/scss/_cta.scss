@@ -1,0 +1,45 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 17vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: $white;
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-radius: 25px;
+    &.orange {
+        background-color: $orange;
+        &::before {
+            display: flex;
+            padding-right: 5px;
+            content: url(../images/icons/edit.png);
+        }
+    }
+    &.purple {
+        background-color: $purple;
+        &::before {
+            display: flex;
+            padding-right: 5px;
+            content: url(../images/icons/be-consult.png);
+        }
+    }
+    &.light-blue {
+        position: absolute;
+        padding: 3vh;
+        right: -10%;
+        background-color: $light-blue;
+        &::before {
+            display: flex;
+            padding-right: 5px;
+        }
+    }
+}
