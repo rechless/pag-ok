@@ -1,95 +1,183 @@
+// start header
 header {
-    background-size: cover;
-    background-image: url(../images/header.jpg);
-    background-position: center 50%;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/header.jpg);
+  background-position: -9vw center;
+  background-repeat: no-repeat;
+  
+  .top-navigation {
+    display: flex;
+    position: relative;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-bottom-right-radius: 50px;
+    background-color: $light-purple;
+    width: 100%;
+    max-width: 60%;
+    justify-content: space-evenly;
+    padding-left: 17vw;
+  }
+  .doubts {
+    width: 100%;
+    max-width: 55%;
+    padding-top: 256px;
+    padding-bottom: 256px;
+    padding-left: 11.5%;
+    font-family: $montserrat;
+    h1 {
+      color: $orange;
+      font-size: 3.4vw;
+      padding-bottom: 2%;
+    }
+    h2 {
+      font-size: 1.5vw;
+      color: $dark;
+      line-height: 1.5;
+    }
+    p {
+      width: 100%;
+      max-width: 365px;
+      line-height: 1.5;
+      color: $gray;
+    }
+    a {
+      color: $light-purple;
+      &:hover,
+      :active,
+      :visited {
+        color: $purple;
+      }
+    }
+    @media (max-width: $max-sm) {
+      padding: 35px;
+      max-width: 100%;
+      h2 {
+        max-width: 100%;
+      }
+    }
+  }
+  .cta-restricted-area {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 13vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: $white;
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 1vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: $orange;
+    &::before {
+      content: url(../images/icons/restrict-area.png);
+      padding-right: 5px;
+    }
+    @media (max-width: $max-sm) {
+      display: none;
+    }
+  }
+  @media (max-width: 1366px) {
+    background-position: -35vw center;
+  }
+  @media (max-width: 1200px) {
+    background-position: -55vw center;
+  }
+  @media (max-width: 1024px) {
+    background-position: -80vw center;
+  }
+  @media (max-width: 920px) {
+    background-position: -95vw center;
+  }
+  @media (max-width: 835px) {
+    background-position: -110vw center;
+  }
+  @media (max-width: $max-sm) {
     .top-navigation {
-        display: flex;
-        position: relative;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        border-bottom-right-radius: 50px;
-        background-color: $light-purple;
-        width: 100%;
-        max-width: 60%;
-        .left-side {
-            display: flex;
-            flex: 1;
-            justify-content: flex-end;
-        }
-        .separator {
-            width: 100%;
-            max-width: 3%;
-        }
-        .right-side {
-            display: flex;
-            flex: 1;
-            justify-content: flex-start;
-        }
+      max-width: 100%;
+      flex-direction: column;
+      background-color: initial;
+      padding-left: initial;
     }
-    .doubts {
-        width: 100%;
-        max-width: 55%;
-        padding-top: 256px;
-        padding-bottom: 256px;
-        padding-left: 12%;
-        font-family: $montserrat;
-        h1 {
-            color: $orange;
-            font-size: 3vw;
-            padding-bottom: 2%;
-        }
-        h2 {
-            color: $dark;
-            line-height: 1.5;
-        }
-        p {
-            width: 100%;
-            max-width: 365px;
-            line-height: 1.5;
-            color: $gray;
-        }
-        a {
-            color: $light-purple;
-            &:hover,
-            :active,
-            :visited {
-                color: $purple;
-            }
-        }
-    }
-    .restricted-area {
-        position: absolute;
-        right: 5%;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        max-width: 13vw;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-        padding-left: 2vw;
-        padding-right: 2vw;
-        color: $white;
-        font-family: $montserrat;
-        font-weight: 600;
-        font-size: 12px;
-        text-decoration: none;
-        text-transform: uppercase;
-        white-space: nowrap;
-        border-radius: 25px;
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 25px;
-        border-bottom-left-radius: 25px;
-        background-color: $orange;
-        &::before {
-            content: url(../images/icons/restrict-area.png);
-            padding-right: 5px;
-        }
-    }
-    .faqs {
-        background-color: $whiteless;
-    }
+    background-position: 100% center;
+  }
+  
 }
+// end header
+
+// start faqs
+.faqs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: $whiteless;
+  padding-top: 20px;
+  article {
+    width: 100%;
+    max-width: 70%;
+    padding-top: 10px;
+    padding-left: 11.5%;
+  }
+  h3 {
+    display: flex;
+    width: 100%;
+    color: $light-purple;
+    font-family: $montserrat;
+    font-weight: 700;
+    align-items: center;
+    flex: 1;
+    padding-bottom: 20px;
+    font-family: $montserrat;
+    i {
+      flex: 2;
+      margin-left: 5%;
+      margin-right: 5%;
+      background-color: $light-gray;
+      display: flex;
+      width: 100%;
+      height: 2px;
+      border: 0;
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+  p {
+    color: $gray;
+    max-width: 50%;
+    display: none;
+    &:last-of-type {
+      padding-bottom: 50px;
+    }
+  }
+  @media(max-width: $max-sm) {
+    article {
+      padding: 10px 35px;
+      max-width: 100%;
+    }
+    p {
+      max-width: 100%;
+    }
+  }
+}
+// end faqs
+
+// start footer
+footer {
+  background-color: $light-purple;
+  min-height: 10vh;
+}
+// end footer
