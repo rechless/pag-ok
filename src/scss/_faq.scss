@@ -92,7 +92,7 @@ header {
       display: none;
     }
   }
-  
+
   @media (max-width: 1366px) {
     background-position: -35vw center;
   }
@@ -165,7 +165,7 @@ header {
   }
   @media (max-width: $max-sm) {
     article {
-      padding: 10px 35px;
+      padding: 10px 10%;
       max-width: 100%;
     }
     p {
