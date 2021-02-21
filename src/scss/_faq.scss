@@ -1,10 +1,8 @@
-// start header
 header {
   background-size: cover;
   background-image: url(../images/header.jpg);
   background-position: -9vw center;
   background-repeat: no-repeat;
-  
   .top-navigation {
     display: flex;
     position: relative;
@@ -49,10 +47,14 @@ header {
       }
     }
     @media (max-width: $max-sm) {
-      padding: 35px;
+      padding: 11vw;
       max-width: 100%;
+      h1 {
+        font-size: 8vw;
+      }
       h2 {
         max-width: 100%;
+        font-size: 3.5vw;
       }
     }
   }
@@ -90,13 +92,14 @@ header {
       display: none;
     }
   }
+  
   @media (max-width: 1366px) {
     background-position: -35vw center;
   }
   @media (max-width: 1200px) {
     background-position: -55vw center;
   }
-  @media (max-width: 1024px) {
+  @media (max-width: $max-md) {
     background-position: -80vw center;
   }
   @media (max-width: 920px) {
@@ -114,11 +117,8 @@ header {
     }
     background-position: 100% center;
   }
-  
 }
-// end header
 
-// start faqs
 .faqs {
   display: flex;
   flex-direction: column;
@@ -163,7 +163,7 @@ header {
       padding-bottom: 50px;
     }
   }
-  @media(max-width: $max-sm) {
+  @media (max-width: $max-sm) {
     article {
       padding: 10px 35px;
       max-width: 100%;
@@ -173,11 +173,8 @@ header {
     }
   }
 }
-// end faqs
 
-// start footer
 footer {
   background-color: $light-purple;
   min-height: 10vh;
 }
-// end footer
