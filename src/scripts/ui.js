@@ -1,9 +1,7 @@
 $(function(){
-  {
     let arrow = $('article h3 img');
-    let clicked  = false;
     arrow.on('click', function() {
-      if(!clicked) {
+      if(!window.clicked) {
         $(this).parent().parent().find('p').show();
         clicked = true;
       } else {
@@ -11,5 +9,4 @@ $(function(){
         clicked = false;
       }
     })
-  }
 })

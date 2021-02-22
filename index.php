@@ -36,9 +36,9 @@
                 <h3>
                     <?= $doubt['titulo'] ?>
                     <i></i>
-                    <img src="public/images/icons/arrow-down.png" alt="Uma seta na cor roxa apontando para baixo">
+                    <img class="clicked" src="public/images/icons/arrow-down.png" alt="Uma seta na cor roxa apontando para baixo">
                 </h3>
-                <p>
+                <p class="hide">
                     <?= $doubt['descricao'] ?>
                 </p>
             </article>
